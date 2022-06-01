@@ -1,0 +1,57 @@
+﻿  <aside class="main-sidebar sidebar-light-primary accent-green elevation-4">
+    <!-- Brand Logo -->
+    <a class="brand-link">
+      <img src="~/IMG/Comarca.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Comarca</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+          <li class="nav-item">
+            <a  asp-controller="Cargamento" asp-action="Listado">
+              <i class="nav-icon fas fa-th"></i>
+                  Cargamentos
+                  </a>
+          </li>
+
+          <li class="nav-item">
+            <a  asp-controller="Usuario" asp-action="Listado">
+              <i class="nav-icon fas fa-th"></i>
+                  Usuarios
+                  </a>
+          </li>
+
+          <li class="nav-item">
+            <a  asp-controller="Proveedor" asp-action="Tabla1">
+              <i class="nav-icon fas fa-th"></i>
+                  Proveedor
+                  </a>
+          </li>
+
+          <li class="nav-item">
+            <a  asp-controller="Proveedor" asp-action="Tabla1">
+              <i class="nav-icon fas fa-th"></i>
+                  Proveedor
+                  </a>
+          </li>
+
+            <li class="nav-item btn mainside-footer col-2 logoutbtn">
+            <a asp-controller="Usuario" asp-action="Inicial" class="nav-link">
+              <p id="LogOut">
+                  Cerrar sesión
+              </p>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>

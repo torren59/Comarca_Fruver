@@ -1,0 +1,69 @@
+﻿@model Comarca_Fruver.Models.Usuario;
+@{ViewData["Title"]="Ingresa";}
+@{
+    Layout = "";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Comarca Fruver</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Comarca_Fruver.styles.css" asp-append-version="true" />
+      <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="~/AdminLte/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="~/AdminLte/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="~/css/Footer.css">
+</head>
+<body>
+
+    <div class="RecuadroUno">
+        
+        <div class="TitleInicial"><h1>Bienvenido a Comarca-Fruver</h1><br /><sub>Ingresa tus credenciales</sub></center></div>
+        <form method="post" asp-action="Inicial">
+        <div class="LogCard">
+            <center>
+            <center>
+            <label asp-for="Documento" ></label>
+            <input asp-for="Documento"/> 
+            <span asp-validation-for="Documento" class="text-danger"></span>
+            <br />
+            <label asp-for="Clave" ></label>
+            <input asp-for="Clave" type="password"/>
+            <span asp-validation-for="Clave" class="text-danger"></span> <br />
+            <center>
+            <button type="submit" name="Ingreso" value="Ingresar" class="btn btn-primary btn-sm">Ingresar</button>
+            </center>
+           </center>
+        </div>
+        </form>
+
+        @if (TempData["Ingreso"]!=null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            @TempData["Ingreso"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times</span></button>
+        </div>
+    }
+
+    </div>
+
+    <partial name="_Footer"/>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- jQuery -->
+    <script src="~/AdminLte/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+<script src="~/AdminLte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="~/AdminLte/dist/js/adminlte.min.js"></script>
+</body>
+</html>

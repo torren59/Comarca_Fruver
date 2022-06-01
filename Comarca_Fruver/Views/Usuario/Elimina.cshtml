@@ -1,0 +1,43 @@
+﻿@model Comarca_Fruver.Models.Usuario
+
+@{
+    ViewData["Title"] = "Editar - ";
+}
+
+<div class="float-right d-none d-sm-inline PrinCont">
+
+    <form method="post" asp-action="Elimina">
+
+        <input type="hidden" asp-for="UsuarioID" />
+        <input type="hidden" asp-for="Documento" />
+        <input type="hidden" asp-for="Nombre" />
+        <input type="hidden" asp-for="Apellido" />
+        <input type="hidden" asp-for="Celular" />
+        <input type="hidden" asp-for="Rol" />
+        <input type="hidden" asp-for="Clave" />
+
+        <!--Validación del lado del servidor-->
+
+        <div class="formul col-8">
+
+            <h1>Usuario registrado</h1> 
+
+            <p>Usuario: @Model.Nombre @Model.Apellido</p>
+            <br />
+            <p>Documento: @Model.Documento</p>
+
+
+        <div class="form-group text-left">
+            <input type="submit" value="Eliminar usuario" class="btn btn-primary btn-sm col-12"/>
+        </div>
+        </div>
+    </form>
+
+
+</div>
+
+@section scripts{
+
+    @{<partial name = "_ValidationScriptsPartial" />}
+
+}

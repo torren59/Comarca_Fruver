@@ -1,0 +1,80 @@
+﻿@model Comarca_Fruver.ModelsDto.UsuarioDto
+
+@{
+    ViewData["Title"] = "Nuevo - ";
+    IEnumerable<Rol> OptRol = ViewBag.Rol;
+}
+
+<div class="float-right d-none d-sm-inline PrinCont">
+
+    <form method="post" asp-action="Creacion">
+
+        <!--Validación del lado del servidor-->
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="formul col-8">
+
+            <h1>Nuevo Usuario</h1> 
+
+            <p>
+                <sub>Todos los datos son de carácter obligatorio</sub>
+            </p>
+            <br />
+
+        <div class="form-group">
+            <label asp-for="Documento" class="control-label"></label>
+            <input asp-for="Documento" class="form-control" />
+            <span asp-validation-for="Documento" class="text-danger"></span> <!--Validación del lado del cliente en todos los span del formulario-->
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Nombre" class="control-label"></label>
+            <input asp-for="Nombre" class="form-control" />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Apellido" class="control-label"></label>
+            <input asp-for="Apellido" class="form-control" />
+            <span asp-validation-for="Apellido" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Celular" class="control-label"></label>
+            <input asp-for="Celular" class="form-control" />
+            <span asp-validation-for="Celular" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Rol" class="control-label"></label>
+            <select class="form-select" asp-for="Rol">
+                <option>Seleccione el rol del nuevo integrante</option>
+                   await @{
+                        foreach(var item in OptRol)
+                        {
+                            <option value="@item.NombreRol">@item.RolID @item.NombreRol</option>
+                        }
+                    }
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Clave" class="control-label"></label>
+            <input asp-for="Clave" class="form-control" type="password" />
+            <span asp-validation-for="Clave" class="text-danger"></span>
+        </div>
+
+        <div class="form-group text-left">
+            <input type="submit" value="Crea usuario" class="btn btn-primary btn-sm col-12"/>
+        </div>
+        </div>
+    </form>
+
+
+</div>
+
+@section scripts{
+
+    @{<partial name = "_ValidationScriptsPartial" />}
+
+}

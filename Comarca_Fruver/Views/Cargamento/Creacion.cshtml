@@ -1,0 +1,60 @@
+﻿@model Comarca_Fruver.Models.Cargamento
+
+@{
+    ViewData["Title"] = "Nuevo - ";
+}
+
+<div class="float-right d-none d-sm-inline PrinCont">
+
+    <form method="post" asp-action="Creacion">
+
+        <!--Validación del lado del servidor-->
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="formul col-8">
+
+            <h1>Nuevo cargamento</h1> 
+
+            <p>
+                <sub>Todos los datos son de carácter obligatorio</sub>
+            </p>
+            <br />
+
+        <div class="form-group">
+            <label asp-for="NumeroPedido" class="control-label"></label>
+            <input asp-for="NumeroPedido" class="form-control" />
+            <span asp-validation-for="NumeroPedido" class="text-danger"></span> <!--Validación del lado del cliente en todos los span del formulario-->
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Producto" class="control-label"></label>
+            <input asp-for="Producto" class="form-control" />
+            <span asp-validation-for="Producto" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Peso" class="control-label"></label>
+            <input asp-for="Peso" class="form-control" />
+            <span asp-validation-for="Peso" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Origen" class="control-label"></label>
+            <input asp-for="Origen" class="form-control" />
+            <span asp-validation-for="Origen" class="text-danger"></span>
+        </div>
+
+        <div class="form-group text-left">
+            <input type="submit" value="Crea Cargamento" class="btn btn-primary btn-sm col-12"/>
+        </div>
+        </div>
+    </form>
+
+
+</div>
+
+@section scripts{
+
+    @{<partial name = "_ValidationScriptsPartial" />}
+
+}

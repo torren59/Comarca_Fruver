@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Comarca_Fruver.Models.Cargamento>
+
+@{
+    ViewData["Title"] = "Cargamentos";
+}
+
+  <div class="float-right d-none d-sm-inline PrinCont">
+
+    @if (TempData["mensaje"]!=null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            @TempData["Mensaje"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times</span></button>
+        </div>
+    }
+
+      <div class="row">
+
+          <div class="col-6">
+      <h1>Reporte de cargamentos</h1>
+          </div>
+          <div class="col-6">
+              <a class="btn sm-btn btn-success d-block" asp-controller="Cargamento" asp-action="Creacion">Nuevo cargamento</a>       
+      </div>
+      </div>
+      <br />
+
+      <div id="CargamentoTable">
+
+                  @if (Model.Count() > 0){
+         <table id="TablaCargamento" class="table table-striped" style="width:100%">
+                      <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(m=>m.NumeroPedido)</th>
+                <th>@Html.DisplayNameFor(m=>m.Producto)</th>
+                <th>@Html.DisplayNameFor(m=>m.Peso)</th>
+                <th>@Html.DisplayNameFor(m=>m.Origen)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+                    {
+                        <tr>
+                        <td>@item.NumeroPedido</td>
+                        <td>@item.Producto</td>
+                        <td>@item.Peso</td>
+                        <td>@item.Origen</td>
+                        <td>
+                            <div class="btn-group col-4" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-dark"><a  class="CRUDOP" asp-controller="Cargamento" asp-action="Edicion" asp-route-id="@item.IdCargamento" >Editar</a></button>
+                                <button type="button" class="btn btn-light"><a class="CRUDOP" asp-controller="Cargamento" asp-action="Elimina" asp-route-id="@item.IdCargamento"> Eliminar</a></button>
+                            </div>
+                       </td>
+                        </tr>
+                    }
+        </tbody>
+         </table>   
+        }
+        else
+        {
+            <p>No hay registros previos</p>
+        }
+
+      </div>
+
+
+      </div>

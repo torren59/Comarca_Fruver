@@ -14,6 +14,7 @@ namespace Comarca_Fruver.Controllers
             _context = context;
         }
 
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Inicial(Usuario user)
@@ -61,6 +62,7 @@ namespace Comarca_Fruver.Controllers
             }
 
         }
+        //AQUÍ ACABA EL LOGIN
 
         public IActionResult Listado()
         {
@@ -195,7 +197,7 @@ namespace Comarca_Fruver.Controllers
             }
             else
             {
-                //Llena un objeto UsuarioDto con la info del Usuario}
+
                 UsuPrevioDto.UsuarioID = UsuarioPrevio.UsuarioID;
                 UsuPrevioDto.Documento = UsuarioPrevio.Documento;
                 UsuPrevioDto.Nombre=UsuarioPrevio.Nombre;
@@ -271,6 +273,11 @@ namespace Comarca_Fruver.Controllers
             _context.Remove(User);
             _context.SaveChanges();
             return RedirectToAction("Listado");
+        }
+
+        public IActionResult inicial2()
+        {
+            return View();
         }
     }
 }

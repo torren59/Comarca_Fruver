@@ -1,6 +1,7 @@
 ﻿@model Comarca_Fruver.Models.Usuario;
-@{ViewData["Title"]="Ingresa";}
+
 @{
+    //Con esto evita que la ventana le aparezca dentro del layout o adminlte que tenga implementado
     Layout = "";
 }
 
@@ -15,35 +16,37 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Comarca_Fruver.styles.css" asp-append-version="true" />
       <!-- Google Font: Source Sans Pro -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="~/AdminLte/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="~/AdminLte/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="~/css/Footer.css">
+    <link rel="stylesheet" href="~/css/loginstyle.css">
 </head>
 <body>
 
-    <div class="RecuadroUno">
-        
-        <div class="TitleInicial"><h1>Bienvenido a Comarca-Fruver</h1><br /><sub>Ingresa tus credenciales</sub></center></div>
-        <form method="post" asp-action="Inicial">
-        <div class="LogCard">
-            <center>
-            <center>
-            <label asp-for="Documento" ></label>
-            <input asp-for="Documento"/> 
-            <span asp-validation-for="Documento" class="text-danger"></span>
-            <br />
-            <label asp-for="Clave" ></label>
-            <input asp-for="Clave" type="password"/>
-            <span asp-validation-for="Clave" class="text-danger"></span> <br />
-            <center>
-            <button type="submit" name="Ingreso" value="Ingresar" class="btn btn-primary btn-sm">Ingresar</button>
-            </center>
-           </center>
+    <div class="main-container">
+        <div class="login-form-container">
+
+            <div class="text-in-container" id="FirstFormul" >
+                <div><h1>FutSportSoft</h1></div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo Elentrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+
+                  <div id="btn-ing" ><button type="button" class="btn btn-success col-5">Ingresar</button></div>
+            </div>
+            <!--<div class="text-in-container">Hola</div>-->
         </div>
-        </form>
+    </div>
 
         @if (TempData["Ingreso"]!=null)
     {
@@ -55,7 +58,6 @@
 
     </div>
 
-    <partial name="_Footer"/>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

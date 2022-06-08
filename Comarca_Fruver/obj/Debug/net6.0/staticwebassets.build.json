@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "khJVm2VrOQ78H46clX7mUp5rD1g2P0ipYicrFB6UdAI=",
+  "Hash": "nA9DTnlZryWmuGcY9bfHtkKc7UtxQnudxaq0pdP3oRw=",
   "Source": "Comarca_Fruver",
   "BasePath": "_content/Comarca_Fruver",
   "Mode": "Default",
@@ -34969,6 +34969,23 @@
       "OriginalItemSpec": "wwwroot\\AdminLte\\plugins\\uplot\\uPlot.min.css"
     },
     {
+      "Identity": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\css\\EstiloInicial.css",
+      "SourceId": "Comarca_Fruver",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\",
+      "BasePath": "_content/Comarca_Fruver",
+      "RelativePath": "css/EstiloInicial.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\EstiloInicial.css"
+    },
+    {
       "Identity": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\css\\Footer.css",
       "SourceId": "Comarca_Fruver",
       "SourceType": "Discovered",
@@ -34984,6 +35001,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Footer.css"
+    },
+    {
+      "Identity": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\css\\loginstyle.css",
+      "SourceId": "Comarca_Fruver",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\",
+      "BasePath": "_content/Comarca_Fruver",
+      "RelativePath": "css/loginstyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\loginstyle.css"
     },
     {
       "Identity": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\css\\site.css",
@@ -35020,6 +35054,40 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\IMG\\Baloon.jpg",
+      "SourceId": "Comarca_Fruver",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\",
+      "BasePath": "_content/Comarca_Fruver",
+      "RelativePath": "IMG/Baloon.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IMG\\Baloon.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\IMG\\BaloonMicro.jpg",
+      "SourceId": "Comarca_Fruver",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\",
+      "BasePath": "_content/Comarca_Fruver",
+      "RelativePath": "IMG/BaloonMicro.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IMG\\BaloonMicro.jpg"
+    },
+    {
       "Identity": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\IMG\\Comarca.png",
       "SourceId": "Comarca_Fruver",
       "SourceType": "Discovered",
@@ -35052,6 +35120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\IMG\\ComarcaNo.png"
+    },
+    {
+      "Identity": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\IMG\\loginfoto.jpg",
+      "SourceId": "Comarca_Fruver",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\",
+      "BasePath": "_content/Comarca_Fruver",
+      "RelativePath": "IMG/loginfoto.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IMG\\loginfoto.jpg"
     },
     {
       "Identity": "C:\\Users\\USUARIO\\source\\repos\\Comarca_Fruver\\Comarca_Fruver\\wwwroot\\js\\site.js",
